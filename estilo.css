@@ -2,9 +2,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     padding-top: 60px;
+    background-color: whitesmoke;
 }
 
 
@@ -26,6 +30,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    text-shadow: 0 0 5px black;
+    font-family: 'Alfa Slab One', cursive;
 }
 
 #productos {
@@ -35,10 +41,14 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    line-height: 110px;
+    line-height: 65px;
     font-size: 6vh;
     text-transform: uppercase;
-    border: 10px solid orange;
+    position: sticky;
+    top: 60px;
+    background-color: whitesmoke;
+    border-bottom: 2px solid black;
+    font-family: 'Rubik Moonrocks', cursive;
 }
 /* NAV */
 .container-nav {
@@ -50,6 +60,7 @@ body {
     justify-content: space-between;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 .logo {
@@ -67,6 +78,7 @@ nav a {
     color: rgb(0, 0, 0);
     padding: 15px;
     font-weight: bold;
+    font-family: 'Dancing Script', cursive;
 }
 
 nav a:hover{
@@ -92,3 +104,37 @@ nav a:hover{
     object-fit: cover;
 }
 
+
+#recetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 92vh;
+    font-size: 8vh;
+    color: white;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        ) 
+    ,url(img/recetas.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.recetas-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32%, 1fr) );
+    grid-gap: 10px;
+    padding: 15px;
+}
+
+.recetas-contenedor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
