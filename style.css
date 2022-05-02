@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(img/fondobody.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#logo{
+    width: 70px;
+    position: absolute;
+    margin: 10px;
+}
+h1, p{
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    padding-top: 6vh;
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    padding-top: 3vh;
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    padding-bottom: 20px;
+}
+
+#portada{
+    border-bottom: 1px solid gray;
+}
+
+.container-nav{
+    height: 50vh;
+}
+
+.item-container{
+    display: flex;
+    padding-top: 5vh;
+    justify-content: center;
+    padding-bottom: 8vh;
+}
+.items a{
+    min-width: 300px;
+    padding:50px;
+    margin: 30px;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 50px;
+    box-shadow: 10px 10px 15px black;
+    background:url(img/light-gray-concrete-wall.jpg);
+    background-position: center;
+    border-radius: 10px;
+    background-size: cover;
+    text-decoration: none;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+.items .as{
+    padding: 50px 70px;
+}
+.items{
+    list-style: none;
+    padding-top: 10vh; 
+}
+
+.items:hover{
+    transform: scale(1.1);
+    transform: rotate(8deg);
+}
+
+
+@media (max-width: 1000px){
+    h1,p{
+        font-size: 90px;
+        display: flex;
+        flex-direction: column;
+    }
+    p{
+        font-size: 35px;
+    }
+    .item-container{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .items .as{
+        padding:50px 74px;
+    }
+    .items{
+        margin: 40px;
+    }
+}
