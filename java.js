@@ -26,7 +26,7 @@ window.addEventListener('load',()=>{
             fetch(url)
             .then(Response =>{ return Response.json() })
             .then(data =>{
-                let temp = Math.round(data.main.temp - 274.15)
+                let temp = Math.round(data.main.temp - 271)
                 temperaturaValor.textContent = `${temp} ºC`
 
                 let desc = data.weather[0].description
@@ -34,7 +34,7 @@ window.addEventListener('load',()=>{
 
                 ubicacion.textContent = data.name
 
-                velocidadDelViento.textContent = `${Math.round(data.wind.speed*3.6)} Km/h`
+                velocidadDelViento.textContent = `${Math.round(data.wind.speed*4.6)} Km/h`
 
                 humedad.textContent = `${data.main.humidity} %`
 
