@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    font-family: 'Bebas Neue', cursive;
+}
+body{
+    margin: 0;
+    background-image: url(fondo.jpg);
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    padding: 5vh;
+    color: white;
+
+}
+.weather-content{
+    display: block;
+    width: 450px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.747);
+    padding: 40px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px black;
+}
+h5,h1,h2,p{
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 20px;
+
+}
+p{
+    font-size: 28px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, select{
+    font-size: 30px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.788);
+}
+
+#boton{
+    background-color: rgba(0, 255, 255, 0.76);
+    font-size: 25px;
+    padding: 15px;
+    width: 190px;
+}
+
+#boton:hover{
+    background-color: aqua;
+}
+
+@media (max-width: 920px){
+    body{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+    }
+    .weather-content{
+        padding: 20vh 0px;
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        margin: 0;
+    }
+    h1{
+        font-size: 70px;
+    }
+    h5,h1,h2,p{
+        padding-top: 50px;
+    }
+    option{
+        font-size: 15px;
+    }
+}
