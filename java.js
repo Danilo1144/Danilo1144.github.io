@@ -41,4 +41,15 @@ fetch(`https://online-movie-database.p.rapidapi.com/auto-complete?q=${nombre.val
 }
 
 
+const form = document.querySelector(".form")
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+
+    if(nombre.value === ''){
+        alert('Completa el campo');
+        return
+    }
+    
+})
+
 
