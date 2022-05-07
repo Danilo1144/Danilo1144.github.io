@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+:root{
+    --body-background:rgb(29, 30, 29);
+    --titulo: white;
+    --subtitulo:rgb(226, 162, 42);
+}
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Titillium Web', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--body-background);
+}
+
+#nav-container{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    z-index: 10;
+}
+
+#nav{
+    padding-left: 20px;
+    display: flex;
+    line-height: 60px;
+}
+
+.item-container{
+    list-style: none;
+}
+.link{
+    padding: 0 20px;
+    color: var(--subtitulo);
+    font-size: 20px;
+    text-decoration: none;
+    min-width: max-content;
+}
+.link:hover{
+    text-decoration: underline;
+}
+
+
+
+.fondo{
+    background-image: url(../img/fondobody.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+}
+#hero{
+    height: 100vh;
+    background:url(../img/ventana.png),fixed,no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+#logo{
+    width: 150px;
+    padding-top: 120px;
+}
+#titulo, #subtitulo{
+    color: var(--titulo);
+    padding-left: 20px;
+    text-shadow: 0 0 5px black;
+}
+#titulo{
+    padding-top: 250px;
+    margin: 0;
+    font-size: 80px;
+}
+#subtitulo{
+    font-size: 20px;
+    color: var(--subtitulo);
+}
+
+#Sobre-mi{
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+h3,.titulo-pro{
+    margin: 0;
+    padding: 80px 0 50px 0;
+    font-size: 60px;
+    color: var(--titulo);
+    text-align: center;
+}
+
+.flexbox{
+    margin: auto;
+    max-width: 40%;
+    display: grid;
+    grid-gap: 10px 30px;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+}
+.logos{
+    background-color: var(--subtitulo);
+    padding: 10px;
+    margin: 0 15px;
+    width: 100%;
+    max-width: 120px;
+    border-radius: 10px;
+}
+.logos:hover, .info:hover{
+    transition: 0.5s;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+
+
+
+.proyec{
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+}
+.contenedor-proyectos{
+    display: flex;
+    justify-content: center;
+}
+.galeria{
+    justify-content: center;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info{
+    margin: 20px;
+    border-radius: 10px;
+    background-color: var(--subtitulo);
+    padding: 20px;
+}
+.descripcion{
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    color: var(--titulo);
+    background-color:var(--body-background);
+}
+
+
+.redes{
+    height: 100vh;
+}
+.iconos{
+    margin-top: 50px;
+    text-align: center;
+}
+.link-red{
+    padding: 0;
+    color: var(--subtitulo);
+    font-size: 120px;
+    margin: 0 40px;
+}
+.link-red i{
+    padding: 0;
+    margin: 0;
+}
+.link-red i:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    background: white;
+    font-size: 15px;
+    text-align: center;
+    border-top:3px solid rgb(226, 162, 42) ;
+}
+
+
+@media (max-width:900px) {
+    #subtitulo{
+        font-size: 30px;
+    }
+    .fondo{
+        background-position: left;
+    }
+    #titulo{
+        font-size: 70px;
+        padding-top: 120px;
+    }
+    #subtitulo{
+        font-size: 25px;
+        background-color: var(--body-background);
+    }
+    h3,.titulo-pro{
+        font-size: 40px;
+    }
+    .contenedor{
+        max-width: 100%;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .flexbox{
+        max-width: 70%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .redes{
+        height: 100%;
+    }
+    .iconos{
+        padding-top: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .contenedor{
+        max-width: 100%;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    .flexbox{
+        grid-template-columns: 1fr 1fr;
+    }
+    #nav{
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+}
