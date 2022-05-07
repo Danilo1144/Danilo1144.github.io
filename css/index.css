@@ -274,7 +274,7 @@ footer{
         background-color: var(--body-background);
     }
     .contenedor{
-        max-width: 100%;
+        max-width: 90%;
     }
     #nav{
         justify-content: center;
