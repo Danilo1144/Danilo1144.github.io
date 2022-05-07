@@ -269,16 +269,17 @@ footer{
 }
 
 @media (max-width:767px) {
+    #nav{
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    }
     #subtitulo{
         font-size: 25px;
         background-color: var(--body-background);
     }
-    .contenedor{
+    #links,.contenedor{
         max-width: 90%;
     }
-    #nav{
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-    }
+
 }
