@@ -21,7 +21,7 @@ body{
     position: absolute;
     top: 83%;
     left: calc(50% - 5px);
-    background-color: rgba(255, 255, 255, 0.473);
+    background-color: rgb(255, 255, 255);
     height: 50px;
     width: 5px;
     border-radius: 5px;
@@ -32,7 +32,7 @@ body{
     top: 60%;
     transform: rotate(45deg);
     left: 7px;
-    background-color: rgba(255, 255, 255, 0.473);
+    background-color: rgb(255, 255, 255);
     height: 20px;
     width: 5px;
     border-radius: 5px;
