@@ -1,0 +1,41 @@
+#proyectos{
+    height: 100vh;
+    overflow: hidden;
+
+}
+.swiffy-slider{
+    width: 90%;
+    max-width: 900px;
+    max-height: 500px;
+    margin: auto;
+}
+.imagen{
+    width: 100%;
+    height: 500px;
+}
+.flecha{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    animation: mover 1s linear infinite;
+    opacity: 0;
+}
+@keyframes mover {
+    0%,
+    100%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+}
+
+@media(max-width:800px){
+    .imagen{
+        height: 300px;
+    }
+    .flecha{
+        opacity: 1;
+    }
+}
